@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    
+    <body>
+        <div id="app">
+            <main id="main" :class="isDark ? 'dark' : ''">
+                <div id="clock">
+                    <h1>{{ timestamp }}</h1>
+                </div>
+            </main>
+            <div id="btn">
+                <button class="btn" @click="darkToggle">
+                    <span v-if="isDark">0</span>
+                    <span v-if="!isDark">Ø</span>
+                </button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

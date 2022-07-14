@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+body {
+    font-family: 'Share Tech Mono', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    padding: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 136, 136);    
+}
+
+#app {
+    /* background-size: cover; */
+
+    justify-content: center;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* align-content: stretch; */
+    align-items: center;
+}
+
+#main.dark {
+    /* background-image: url('./pictures/warm-bg.jpg'); */
+    background-color: rgb(25, 25, 25);
+}
+
+#clock {
+    color: white;
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+#btn {
+    background-color: red;
+}
+
+.btn {
+    float: right;
+}
